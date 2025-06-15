@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "CAS",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 2,
+        "nombre": "musical",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 3,
+        "nombre": "recopilatorio",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 4,
+        "nombre": "directo",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 5,
+        "nombre": "tributo",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 6,
+        "nombre": "vídeo",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Sonora Original ",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Bootleg",
+        "fecha": "Jun 11, 2025, 10:16:25 PM",
+        "id_banda": 1
+    }
+]

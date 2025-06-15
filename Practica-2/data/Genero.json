@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Rock"
+    },
+    {
+        "id": 2,
+        "nombre": "Pop"
+    },
+    {
+        "id": 3,
+        "nombre": "Jazz"
+    },
+    {
+        "id": 4,
+        "nombre": "Blues"
+    },
+    {
+        "id": 5,
+        "nombre": "Hip-Hop"
+    },
+    {
+        "id": 6,
+        "nombre": "Reggae"
+    },
+    {
+        "id": 7,
+        "nombre": "Country"
+    },
+    {
+        "id": 8,
+        "nombre": "Classical"
+    },
+    {
+        "id": 9,
+        "nombre": "Electronic"
+    },
+    {
+        "id": 10,
+        "nombre": "Folk"
+    },
+    {
+        "id": 11,
+        "nombre": "Metal"
+    },
+    {
+        "id": 12,
+        "nombre": "Punk"
+    },
+    {
+        "id": 13,
+        "nombre": "Reggaeton"
+    },
+    {
+        "id": 14,
+        "nombre": "Salsa"
+    },
+    {
+        "id": 15,
+        "nombre": "Gospel"
+    },
+    {
+        "id": 16,
+        "nombre": "Cumbia"
+    }
+]
