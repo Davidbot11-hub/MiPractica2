@@ -10,7 +10,6 @@ public class PrimeraParte {
      private LinkedList<Integer> lista;
 
     public void cargar() {
-        // TODO
         lista = new LinkedList<>();
         try {
             BufferedReader fb = new BufferedReader(new FileReader("src/main/java/com/unl/practica2/base/Practica1/data.txt"));
@@ -20,7 +19,6 @@ public class PrimeraParte {
                 line = fb.readLine();
             }
             fb.close();
-            // System.out.println(fb.readLine());
         } catch (Exception e) {
             // TODO: handle exception
         }
@@ -61,7 +59,6 @@ public class PrimeraParte {
             Integer arr[] = lista.toArray();
             long startTime = System.currentTimeMillis();
             quickSort(arr, 0, arr.length - 1);
-           // quickSort(arr, 0, (arr.length - 1));
             long endTime = System.currentTimeMillis() - startTime;
             System.out.println("se ha demorado quicksort " + endTime );
             lista.toList(arr);
@@ -74,7 +71,6 @@ public class PrimeraParte {
             Integer arr[] = lista.toArray();
             long startTime = System.currentTimeMillis();
             shell_sort(arr);
-           // quickSort(arr, 0, (arr.length - 1));
             long endTime = System.currentTimeMillis() - startTime;
             System.out.println("se ha demorado shell " + endTime );
             lista.toList(arr);
@@ -108,7 +104,6 @@ public class PrimeraParte {
     final String RESET = "\u001B[0m";
 
     System.out.println(BLUE + "\n========= Medición de Algoritmos =========\n" + RESET);
-
     for (int i = 0; i < 3; i++) {
         System.out.println("→ Iteración " + (i + 1));
         
@@ -123,7 +118,6 @@ public class PrimeraParte {
         prueba.s_order();
         long finShell = System.currentTimeMillis();
         tiemposShell[i] = finShell - inicioShell;
-
         System.out.println(); 
     }
 
