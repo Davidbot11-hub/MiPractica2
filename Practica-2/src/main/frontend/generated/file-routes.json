@@ -1,0 +1,30 @@
+[
+  {
+    "route": "",
+    "flowLayout": false,
+    "params": {},
+    "title": "Main Layout",
+    "children": [
+      {
+        "route": "",
+        "menu": {
+          "exclude": true
+        },
+        "flowLayout": false,
+        "params": {},
+        "title": "Main"
+      },
+      {
+        "route": "cancion-list",
+        "title": "Cancion",
+        "menu": {
+          "icon": "vaadin:clipboard-check",
+          "order": 1,
+          "title": "Cancion"
+        },
+        "flowLayout": false,
+        "params": {}
+      }
+    ]
+  }
+]
