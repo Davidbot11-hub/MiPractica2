@@ -1,0 +1,9 @@
+com/unl/practica2/taskmanagement/package-info.class
+com/unl/practica2/taskmanagement/service/TaskService.class
+com/unl/practica2/taskmanagement/service/package-info.class
+com/unl/practica2/base/domain/AbstractEntity.class
+com/unl/practica2/taskmanagement/domain/package-info.class
+com/unl/practica2/taskmanagement/domain/Task.class
+com/unl/practica2/taskmanagement/domain/TaskRepository.class
+com/unl/practica2/Application.class
+com/unl/practica2/base/domain/package-info.class
