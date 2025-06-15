@@ -59,14 +59,12 @@ public class DaoCancion extends AdapterDao<Cancion> {
 
     public static void main(String[] args) {
         DaoCancion da = new DaoCancion();
-
         da.getObj().setNombre("XCLANA");
         da.getObj().setDuracion(3);
         da.getObj().setUrl("www.google.com");
         da.getObj().setTipo(TipoArchivoEnum.STREAMING);
         da.getObj().setId_album(1);
         da.getObj().setId_genero(1);
-
         if (da.save()) {
             System.out.println("Se guardó correctamente");
         } else {
