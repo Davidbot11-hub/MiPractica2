@@ -95,8 +95,6 @@ public class PrimeraParte {
 
     public static void main(String[] args) {
     PrimeraParte prueba = new PrimeraParte();
-    long[] tiemposQuick = new long[3];
-    long[] tiemposShell = new long[3];
 
     final String RED = "\u001B[31m";
     final String GREEN = "\u001B[32m";
@@ -104,39 +102,27 @@ public class PrimeraParte {
     final String RESET = "\u001B[0m";
 
     System.out.println(BLUE + "\n========= Medición de Algoritmos =========\n" + RESET);
-    for (int i = 0; i < 3; i++) {
-        System.out.println("→ Iteración " + (i + 1));
-        
-        // Medir QuickSort
-        long inicioQuick = System.currentTimeMillis();
-        prueba.q_order();
-        long finQuick = System.currentTimeMillis();
-        tiemposQuick[i] = finQuick - inicioQuick;
 
-        // Medir ShellSort
-        long inicioShell = System.currentTimeMillis();
-        prueba.s_order();
-        long finShell = System.currentTimeMillis();
-        tiemposShell[i] = finShell - inicioShell;
-        System.out.println(); 
-    }
+    // Medir QuickSort
+    long inicioQuick = System.currentTimeMillis();
+    prueba.q_order();
+    long finQuick = System.currentTimeMillis();
+    long tiempoQuick = finQuick - inicioQuick;
 
-    long totalQuick = 0;
-    long totalShell = 0;
-    for (int i = 0; i < 3; i++) {
-        totalQuick += tiemposQuick[i];
-        totalShell += tiemposShell[i];
-    }
+    // Medir ShellSort
+    long inicioShell = System.currentTimeMillis();
+    prueba.s_order();
+    long finShell = System.currentTimeMillis();
+    long tiempoShell = finShell - inicioShell;
 
-    System.out.println(GREEN + "✔ Tiempo total QuickSort: " + totalQuick + " ms" + RESET);
-    System.out.println(RED + "✔ Tiempo total ShellSort: " + totalShell + " ms" + RESET);
+    System.out.println(GREEN + "✔ Tiempo QuickSort: " + tiempoQuick + " ms" + RESET);
+    System.out.println(RED + "✔ Tiempo ShellSort: " + tiempoShell + " ms" + RESET);
     System.out.println("\n+----------------+--------------+--------------+");
-    System.out.println("|  Iteración     |  QuickSort   |  ShellSort   |");
-    System.out.println("+----------------+--------------+--------------+");
-    for (int i = 0; i < 3; i++) {
-        System.out.printf("|      %d         |     %4d ms   |     %4d ms   |\n", i + 1, tiemposQuick[i], tiemposShell[i]);
-    }
-    System.out.println("+----------------+--------------+--------------+");
+    System.out.println("|  Algoritmo     |   Duración   |");
+    System.out.println("+----------------+--------------+");
+    System.out.printf("|  QuickSort     |   %6d ms   |\n", tiempoQuick);
+    System.out.printf("|  ShellSort     |   %6d ms   |\n", tiempoShell);
+    System.out.println("+----------------+--------------+");
     System.out.println(BLUE + "\nResultado generado correctamente." + RESET);
 }
 }
